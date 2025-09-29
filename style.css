@@ -12,6 +12,16 @@ body {
     background-color: #FFFFFF;
 }
 
+
+.archivo-headers {
+  font-family: "Archivo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
 hr {
     border: none;
     background-color: #D3D3D3;
