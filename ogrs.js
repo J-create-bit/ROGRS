@@ -10,7 +10,7 @@ var ratingImg = {
     "T": new Image(),
     "A": new Image()
 }
-ratingImg.Y.src = "./graphics/x2/rating_icon_y.png";
+ratingImg.Y.src = "./graphics/x2/rating_icon_e.png";
 ratingImg.P.src = "./graphics/x2/rating_icon_p.png";
 ratingImg.T.src = "./graphics/x2/rating_icon_t.png";
 ratingImg.A.src = "./graphics/x2/rating_icon_a.png";
@@ -21,7 +21,7 @@ var ratingBannerImg = {
     "T": new Image(),
     "A": new Image()
 }
-ratingBannerImg.Y.src = "./graphics/x2/rating_banner_y.png";
+ratingBannerImg.Y.src = "./graphics/x2/rating_banner_e.png";
 ratingBannerImg.P.src = "./graphics/x2/rating_banner_p.png";
 ratingBannerImg.T.src = "./graphics/x2/rating_banner_t.png";
 ratingBannerImg.A.src = "./graphics/x2/rating_banner_a.png";
