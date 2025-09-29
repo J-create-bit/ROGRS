@@ -11,3 +11,10 @@ The OGRS project was archived by the owner on Oct 22, 2019. It is now read-only.
 
 ROGRS is based on OGRS and TIGRS, combining both visual systems but maintaining some rules from each system. ROGRS consists of four categories: ALL, PRETEENS, TEENS, and ADULTS. They are differentiated by image, color, number, and text. Above, you can see the four categories and their labels. Below is a small table.
 
+|  | E (Everyone)  | P (Preteens) | T (Teens) | A (Adults) |
+|---|---|---|---|---|
+| **Símbolo/Symbol** | :D | :) | ;)  |  ╎( |
+| **Color (EN)** | 🟢 GREEN| 🔵 TURQUOISE/BLUE | 🟣 PINK/VIOLET/FUCHSIA | 🔴 RED/BORDEAUX/BROWN |
+| **Color (ES)** | VERDE | TURQUESA/AZUL | ROSADO/VIOLETA/FUCSIA | ROJO/BURDEO/MARRÓN |
+| **Edad/Age** | +0 | +10 | +13 | +18 |
+| **Texto/Text** | EVERYONE | PRETEENS | TEENS | ADULTS |
