@@ -18,3 +18,5 @@ ROGRS is based on OGRS and TIGRS, combining both visual systems but maintaining 
 | **Color (ES)** | VERDE | TURQUESA/AZUL | ROSADO/VIOLETA/FUCSIA | ROJO/BURDEO/MARRÓN |
 | **Edad/Age** | +0 | +10 | +13 | +18 |
 | **Texto/Text** | EVERYONE | PRETEENS | TEENS | ADULTS |
+
+![Tabla](https://github.com/J-create-bit/ROGRS/blob/master/graphics/image.png?raw=true)
