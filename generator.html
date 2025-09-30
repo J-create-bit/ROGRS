@@ -4,9 +4,13 @@
     <head>
         <meta charset="utf-8" />
         <title>ROGRS</title>
-        <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="./style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900" rel="stylesheet">        <link rel="stylesheet" href="./style.css">
         <link rel="icon" href="./graphics/icon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
     </head>
     <body>
         <div id="page">
@@ -21,29 +25,29 @@
             </nav>
             <hr/>
             <form id="rogrsForm" onchange="generate()">
-                <h2 class="archivo-headers">Violence</h2>
+                <h2 class="archivo-black-regular">Violence</h2>
                 <div class="dotleft">
                     <input name="violence" type="radio" value="None" checked="checked"><label><b>None</b></label><br/>
-                    <h3>Cartoon Violence</h3>
+                    <h3 class="archivo-headers">Cartoon Violence</h3>
                     <input name="violence" type="radio" value="Mild Cartoon Violence"><label><b>Mild</b> - Depictions of cartoon-like characters in unsafe situations</label><br/>
                     <input name="violence" type="radio" value="Cartoon Violence"><label><b>Moderate</b> - Depictions of cartoon-like characters in aggressive conflict</label><br/>
                     <input name="violence" type="radio" value="Intense Cartoon Violence"><label><b>Intense</b> - Graphic depictions of violence involving cartoon-like characters</label><br/>
                 
-                    <h3>Fantasy Violence</h3>
+                    <h3 class="archivo-headers">Fantasy Violence</h3>
                     <input name="violence" type="radio" value="Mild Fantasy Violence"><label><b>Mild</b> - Depictions of characters in unsafe situations easily distinguishable from real life</label><br/>
                     <input name="violence" type="radio" value="Fantasy Violence"><label><b>Moderate</b> - Depictions of characters in aggressive conflict easily distinguishable from real life</label><br/>
                     <input name="violence" type="radio" value="Intense Fantasy Violence"><label><b>Intense</b> - Graphic depictions of violence involving situations easily distinguishable from real life</label><br/>
 
-                    <h3>Realistic Violence</h3>
+                    <h3 class="archivo-headers">Realistic Violence</h3>
                     <input name="violence" type="radio" value="Mild Realistic Violence"><label><b>Mild</b> - Mild depictions of realistic characters in unsafe situations</label><br/>
                     <input name="violence" type="radio" value="Realistic Violence"><label><b>Moderate</b> - Depictions of realistic characters in aggressive conflict</label><br/>
                     <input name="violence" type="radio" value="Intense Realistic Violence"><label><b>Intense</b> - Graphic depictions of violence involving realistic characters</label><br/>
 
-                    <h3>Sexual Violence</h3>
+                    <h3 class="archivo-headers">Sexual Violence</h3>
                     <input name="sexual_violence" type="checkbox" value="Sexual Violence"><label><b>Sexual Violence</b> - Depictions of or graphics references to violent sexual behavior</label>
                 </div>
 
-                <h2 class="archivo-headers">Blood</h2>
+                <h2 class="archivo-black-regular">Blood</h2>
                 <div class="dotleft">
                     <input name="blood" type="radio" value="None" checked="checked"><label><b>None</b></label><br/>
                     <input name="blood" type="radio" value="Animated Blood"><label><b>Animated</b> - Unrealistic depictions of blood</label><br/>
@@ -51,58 +55,58 @@
                     <input name="blood" type="radio" value="Blood and Gore"><label><b>Blood and Gore</b> - Realistic depictions of blood and/or the mutilation of body parts</label>
                 </div>
 
-                <h2 class="archivo-headers">Drugs/Alcohol</h2>
+                <h2 class="archivo-black-regular">Drugs/Alcohol</h2>
                 <div class="dotleft">
-                    <h3>Alcohol</h3>
+                    <h3 class="archivo-headers">Alcohol</h3>
                     <input name="alcohol" type="radio" value="None" checked="checked"><label><b>None</b></label><br/>
                     <input name="alcohol" type="radio" value="Alcohol Reference"><label><b>Reference</b> - References to or images of alcoholic beverages</label><br/>
                     <input name="alcohol" type="radio" value="Alcohol Use"><label><b>Use</b> - Use of alcoholic beverages</label><br/>
 
-                    <h3>Drugs</h3>
+                    <h3 class="archivo-headers">Drugs</h3>
                     <input name="drugs" type="radio" value="None" checked="checked"><label><b>None</b></label><br/>
                     <input name="drugs" type="radio" value="Drug Reference"><label><b>Reference</b> - References to or images of illicit drugs</label><br/>
                     <input name="drugs" type="radio" value="Drug Use"><label><b>Use</b> - Use of illicit drugs</label><br/>
                     
-                    <h3>Tobacco</h3>
+                    <h3 class="archivo-headers">Tobacco</h3>
                     <input name="tobacco" type="radio" value="None" checked="checked"><label><b>None</b></label><br/>
                     <input name="tobacco" type="radio" value="Tobacco Reference"><label><b>Reference</b> - References to or images of tobacco products</label><br/>
                     <input name="tobacco" type="radio" value="Tobacco Use"><label><b>Use</b> - Use of tobacco products</label><br/>
                 </div>
                 
-                <h2 class="archivo-headers">Sex/Nudity</h2>
+                <h2 class="archivo-black-regular">Sex/Nudity</h2>
                 <div class="dotleft">
-                    <h3>Nudity</h3>
+                    <h3 class="archivo-headers">Nudity</h3>
                     <input name="nudity" type="radio" value="None" checked="checked"><label><b>None</b></label><br/>
                     <input name="nudity" type="radio" value="Brief Nudity"><label><b>Brief Nudity</b> - Brief depictions of nudity or artistic nudity</label><br/>
                     <input name="nudity" type="radio" value="Nudity"><label><b>Nudity</b> - Prolonged depictions of nudity</label><br/>
 
-                    <h3>Sexual Themes</h3>
+                    <h3 class="archivo-headers">Sexual Themes</h3>
                     <input name="sexual_themes" type="radio" value="None" checked="checked"><label><b>None</b></label><br/>
                     <input name="sexual_themes" type="radio" value="Suggesstive Themes"><label><b>Suggestive Themes</b> - Provocative references or depictions</label><br/>
                     <input name="sexual_themes" type="radio" value="Sexual Themes"><label><b>Sexual Themes</b> - Sexual references or depictions</label><br/>
                     <input name="sexual_themes" type="radio" value="Strong Sexual Content"><label><b>Strong Sexual Content</b> - Graphic depictions of sexual behavior</label><br/>
                 </div>
 
-                <h2 class="archivo-headers">Miscellaneous</h2>
+                <h2 class="archivo-black-regular">Miscellaneous</h2>
                 <div class="dotleft">
-                    <h3>Gambling</h3>
+                    <h3 class="archivo-headers">Gambling</h3>
                     <input name="gambling" type="radio" value="None" checked="checked"><label><b>None</b></label><br/>
                     <input name="gambling" type="radio" value="Simulated Gambling"><label><b>Simulated</b> - Gambling involving virtual, "play," money</label><br/>
                     <input name="gambling" type="radio" value="Real Gambling"><label><b>Real</b> - Gambling using real currency</label>
                     
-                    <h3>Humor</h3>
+                    <h3 class="archivo-headers">Humor</h3>
                     <input name="humor" type="radio" value="None" checked="checked"><label><b>None</b></label><br/>
                     <input name="humor" type="radio" value="Comical Slapstick"><label><b>Comical Slapstick</b> - Depictions of slapstick humor</label><br/>
                     <input name="humor" type="radio" value="Crude Humor"><label><b>Crude Humor</b> - Depections of or dialog involving mildly vulgar humor; "bathroom" humor</label><br/>
                     <input name="humor" type="radio" value="Mature Humor"><label><b>Mature Humor</b> - Depictions of or dialog involving mature/sexual humor</label>
                     
-                    <h3>Language</h3>
+                    <h3 class="archivo-headers">Language</h3>
                     <input name="language" type="radio" value="None" checked="checked"><label><b>None</b></label><br/>
                     <input name="language" type="radio" value="Mild Language"><label><b>Mild</b> - Mild or infrequent use of profanity</label><br/>
                     <input name="language" type="radio" value="Moderate Language"><label><b>Moderate</b> - Moderate use of profanity</label><br/>
                     <input name="language" type="radio" value="Strong Language"><label><b>Strong</b> - Strong or frequent use of profanity</label><br/>
                     
-                    <h3>Other</h3>
+                    <h3 class="archivo-headers">Other</h3>
                     <input name="disturbingcontent" type="checkbox" value="Disturbing content"><label><b>Disturbing content</b></label>
                 </div>
             </form>

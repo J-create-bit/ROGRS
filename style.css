@@ -12,6 +12,14 @@ body {
     background-color: #FFFFFF;
 }
 
+/* Fonts */
+
+.archivo-black-regular {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 .archivo-headers {
   font-family: "Archivo", sans-serif;
@@ -21,6 +29,17 @@ body {
   font-variation-settings:
     "wdth" 100;
 }
+
+label {
+  font-family: "Archivo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 50;
+}
+
+/* Fonts End */
 
 hr {
     border: none;
