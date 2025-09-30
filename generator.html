@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>OGRS</title>
+        <title>ROGRS</title>
         <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="./style.css">
         <link rel="icon" href="./graphics/icon.ico">
@@ -20,7 +20,7 @@
                 <a href="./generator">Generator</a>
             </nav>
             <hr/>
-            <form id="ogrsForm" onchange="generate()">
+            <form id="rogrsForm" onchange="generate()">
                 <h2>Violence</h2>
                 <div class="dotleft">
                     <input name="violence" type="radio" value="None" checked="checked"><label><b>None</b></label><br/>
@@ -113,7 +113,7 @@
                 <tbody>
                     <tr>
                         <td>
-                            <form id="ogrsImgSettings" onchange="generate()">
+                            <form id="rogrsImgSettings" onchange="generate()">
                                 <label><b>Rating </b></label><select name="rating">
                                     <option value="E">Everyone</option>
                                     <option value="P">Preteens (+10)</option>
@@ -127,7 +127,7 @@
                             </form> 
                         </td>
                         <td>
-                            <canvas id="ogrsCanvas" width="320" height="96" style="position:inherit;right: 0px;"></canvas>
+                            <canvas id="rogrsCanvas" width="320" height="96" style="position:inherit;right: 0px;"></canvas>
                         </td>
                     </tr>
                 </tbody>
