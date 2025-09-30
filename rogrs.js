@@ -1,8 +1,8 @@
-var ce = document.getElementById("ogrsCanvas");
+var ce = document.getElementById("rogrsCanvas");
 var c = ce.getContext("2d");
-var f = document.getElementById("ogrsForm");
-var ogrsLogo = new Image();
-ogrsLogo.src = ".//graphics/x2/logo_black.png";
+var f = document.getElementById("rogrsForm");
+var rogrsLogo = new Image();
+rogrsLogo.src = ".//graphics/x2/logo_black.png";
 
 var ratingImg = {
     "E": new Image(),
@@ -46,7 +46,7 @@ function generate() {
 
     ce.height = Math.max(96, (0.25 + reasons.length) * 16);
 
-    if (ogrsImgSettings.size.value == "Large") {
+    if (rogrsImgSettings.size.value == "Large") {
         ce.width = 320;
     } else {
         ce.width = 68;
@@ -70,8 +70,8 @@ function generate() {
     c.fillRect(0, ce.height - 2, 512, 512); // Bottom border
     c.fillRect(ce.width - 2, 0, 512, 512);  // Right border
 
-    c.drawImage(ogrsLogo, 2, 0);            // Draw logo
+    c.drawImage(rogrsLogo, 2, 0);            // Draw logo
 
-    c.drawImage(ratingImg[ogrsImgSettings.rating.value], 2, 16);
-    c.drawImage(ratingBannerImg[ogrsImgSettings.rating.value], 2, 80);
+    c.drawImage(ratingImg[rogrsImgSettings.rating.value], 2, 16);
+    c.drawImage(ratingBannerImg[rogrsImgSettings.rating.value], 2, 80);
 }
