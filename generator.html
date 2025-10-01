@@ -19,12 +19,12 @@
                 <b>R</b>enewed <b>O</b>pen-source <b>G</b>ame <b>R</b>ating <b>S</b>ystem
             </header>
             <hr/>
-            <nav>
-                <a href="">Home</a>
-                <a href="./generator">Generator</a>
+            <nav class="archivo-headers">
+                <a href="./index.html">Home</a>
+                <a href="./generator.html">Generator</a>
             </nav>
             <hr/>
-            <form id="rogrsForm" onchange="generate()">
+            <form id="rogrsForm" onchange="autoCalculateRating()">
                 <h2 class="archivo-black-regular">Violence</h2>
                 <div class="dotleft">
                     <input name="violence" type="radio" value="None" checked="checked"><label><b>None</b></label><br/>
@@ -118,7 +118,7 @@
                     <tr>
                         <td>
                             <form id="rogrsImgSettings" onchange="generate()">
-                                <label><b>Rating </b></label><select name="rating">
+                                <label><b>Rating </b></label><select name="rating" id="ratingSelect">
                                     <option value="E">Everyone</option>
                                     <option value="P">Preteens (+10)</option>
                                     <option value="T">Teens (+13)</option>
