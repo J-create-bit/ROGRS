@@ -79,7 +79,6 @@ function generate() {
 function autoCalculateRating() {
     var pbase = 0; // Score base, 0=Everyone
     
-    // Violencia
     var violence = f.violence.value;
     if (violence.includes("Mild Cartoon")) pbase = Math.max(pbase, 0); // E
     else if (violence.includes("Cartoon Violence")) pbase = Math.max(pbase, 1); // P
@@ -91,37 +90,29 @@ function autoCalculateRating() {
     else if (violence.includes("Realistic Violence") && !violence.includes("Mild")) pbase = Math.max(pbase, 2); // T
     else if (violence.includes("Intense Realistic")) pbase = Math.max(pbase, 3); // A
     
-    // Violencia sexual - automáticamente A
     if (f.sexual_violence.checked) pbase = 3;
     
-    // Sangre
     var blood = f.blood.value;
     if (blood === "Animated Blood") pbase = Math.max(pbase, 1); // P
     else if (blood === "Realistic Blood") pbase = Math.max(pbase, 2); // T
     else if (blood === "Blood and Gore") pbase = Math.max(pbase, 3); // A
     
-    // Alcohol
     if (f.alcohol.value === "Alcohol Reference") pbase = Math.max(pbase, 1); // P
     else if (f.alcohol.value === "Alcohol Use") pbase = Math.max(pbase, 2); // T
     
-    // Drogas
     if (f.drugs.value === "Drug Reference") pbase = Math.max(pbase, 2); // T
     else if (f.drugs.value === "Drug Use") pbase = Math.max(pbase, 3); // A
     
-    // Tabaco
     if (f.tobacco.value === "Tobacco Reference") pbase = Math.max(pbase, 1); // P
     else if (f.tobacco.value === "Tobacco Use") pbase = Math.max(pbase, 2); // T
     
-    // Desnudez
     if (f.nudity.value === "Brief Nudity") pbase = Math.max(pbase, 2); // T
     else if (f.nudity.value === "Nudity") pbase = Math.max(pbase, 3); // A
     
-    // Temas sexuales
     if (f.sexual_themes.value === "Suggesstive Themes") pbase = Math.max(pbase, 1); // P
     else if (f.sexual_themes.value === "Sexual Themes") pbase = Math.max(pbase, 2); // T
     else if (f.sexual_themes.value === "Strong Sexual Content") pbase = Math.max(pbase, 3); // A
     
-    // Apuestas reales
     if (f.gambling.value === "Real Gambling") pbase = Math.max(pbase, 3); // A
     else if (f.gambling.value === "Simulated Gambling") pbase = Math.max(pbase, 1); // P
     
